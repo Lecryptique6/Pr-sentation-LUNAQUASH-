@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNAQASH AGENCIES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">💼 LUNAQASH AGENCIES</div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#formations">Formations</a></li>
+            <li><a href="#affiliation">Affiliation</a></li>
+            <li><a href="#commencer">Commencer</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil" class="hero">
+    <h1>💸 Moi-même, j'ai retiré plus de 150 000 FCFA en moins de 12 jours !</h1>
+    <p>🚀 Toi aussi tu peux le faire. Il te suffit de <strong>3 500 FCFA</strong> pour commencer !</p>
+</section>
+
+<section id="formations" class="bonus">
+    <h2>🎁 BONUS : 12 FORMATIONS DIGITALES 100% GRATUITES</h2>
+    <div class="grid">
+        <div>📊 Trading Forex</div><div>🛒 Vente en Ligne</div><div>📈 TikTok & Instagram</div>
+        <div>🤖 Intelligence Artificielle</div><div>🎬 CapCut & Canva</div><div>💰 Augmentez tes vues WhatsApp (100-1000 vues)</div>
+        <div>📱 Community Manager</div><div>🎯 Publicité Facebook</div><div>📧 Astuces Marketing</div>
+        <div>🌐 Campagnes publicitaires ciblées</div><div>📊 Créer comptes TikTok monétisés</div><div>🚀 Booster TikTok/Instagram</div>
+    </div>
+</section>
+
+<section id="affiliation" class="affiliation">
+    <h2>💥 Le VRAI Secret : L'AFFILIATION PUISSANTE</h2>
+    <p>🔗 Tu invites quelqu'un (peu importe son pays) → <strong>1 700 FCFA DIRECT</strong> dans ton compte !</p>
+    <div class="levels">
+        <div><strong>✅ Niveau 1</strong><br>Tu invites Sarah<br><strong>1 700 FCFA</strong></div>
+        <div><strong>✅ Niveau 2</strong><br>Sarah invite Kevin<br><strong>800 FCFA</strong></div>
+        <div><strong>✅ Niveau 3</strong><br>Kevin invite Nadine<br><strong>400 FCFA</strong></div>
+    </div>
+    <p>💡 Même si tu ne connais pas Kevin ni Nadine → <strong>TU ES PAYÉ quand même !</strong></p>
+</section>
+
+<section class="dispo">
+    <h2>🌍 Disponible PARTOUT en Afrique</h2>
+    <p>💸 Moi-même, j'ai retiré : <strong>416 000 FCFA</strong></p>
+    <p>En seulement <strong>12 jours</strong> (preuves à l'appui !)</p>
+</section>
+
+<section class="invest">
+    <h2>🚀 Investissement Unique</h2>
+    <p><strong>3 500 FCFA</strong> une seule fois pour créer ton compte ✅</p>
+</section>
+
+<section id="commencer" class="start">
+    <h2>Tu veux commencer ?</h2>
+    <p>Tu as juste besoin de <strong>3 500 FCFA</strong> pour créer ton compte ✅</p>
+    <a href="https://wa.me/237682605668" class="go-btn">💬 Écris "GO" maintenant</a>
+    <p>et rejoins la communauté des vrais marketers ! 🚀💼</p>
+</section>
+
+
+<footer style="background:#000; color:#FFD700; text-align:center; padding:20px; font-weight:bold;">
+    © 2025 - by LECRYPTIQUE
+</footer>
+
+<div id="popup-container"></div>
+<script>
+  const names = ["Kevin", "Sarah", "Nadine", "Alex", "Fatou", "Moise", "Chantal", "Junior", "Amina", "Luc"];
+  function showPopup() {
+    const name = names[Math.floor(Math.random() * names.length)];
+    const popup = document.createElement("div");
+    popup.className = "popup";
+    popup.textContent = name + " vient de s'inscrire sur LUNAQASH ✅";
+    document.getElementById("popup-container").appendChild(popup);
+    setTimeout(() => {
+      popup.remove();
+    }, 4000);
+  }
+  setInterval(showPopup, 4000);
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #001d3d;
+    color: white;
+}
+header {
+    background: #000;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    color: yellow;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav a:hover, nav a:focus {
+    background-color: yellow;
+    color: black;
+}
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.hero {
+    background-color: #003566;
+}
+.bonus h2, .affiliation h2, .dispo h2, .invest h2, .start h2 {
+    color: yellow;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.grid div {
+    background: #001a34;
+    border: 1px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+}
+.levels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.levels div {
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.dispo {
+    background: red;
+}
+.invest {
+    background: #003566;
+    border: 1px solid yellow;
+}
+.start {
+    background: #002855;
+}
+.go-btn {
+    display: inline-block;
+    background-color: #00c853;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.go-btn:hover {
+    background-color: #00e676;
+}
+
+/* Animation hover */
+.grid div, .levels div, .contact-box, .invest, .start, .bonus-contacts {
+  transition: transform 0.3s ease;
+}
+.grid div:hover, .levels div:hover, .contact-box:hover, .invest:hover, .start:hover, .bonus-contacts:hover {
+  transform: scale(1.05);
+}
+
+/* Popup style */
+#popup-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+.popup {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  animation: fadeInOut 4s ease-in-out;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
